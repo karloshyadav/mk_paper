@@ -593,7 +593,7 @@ img{
 .main-header{
 	position: fixed;
 	left: 0;
-	top: 30px;
+	top: 0;
 	width: 100%;
 	z-index: 99999;
 	-webkit-transition: all 300ms ease;
@@ -606,8 +606,8 @@ img{
 .main-header.fixed-header{
 	top: 0;
 	position: fixed;
-	background-color: #222222;
-	box-shadow: 0 0 30px rgba(0,0,0,.50);
+	background-color: rgba(246, 244, 239, 0.98);
+	box-shadow: 0 12px 30px rgba(0,0,0,.10);
 }
 
 .main-header .main-box{
@@ -9731,8 +9731,71 @@ img{
 	backdrop-filter: blur(8px);
 }
 
+.main-header .main-box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.main-header .logo-box,
+.main-header .outer-box{
+	float: none;
+}
+
 .main-header .logo img{
 	max-height: 48px;
+}
+
+.mk-main-nav{
+	display: flex;
+	align-items: center;
+	gap: 26px;
+}
+
+.mk-main-nav a{
+	color: var(--mk-dark);
+	font-weight: 600;
+	font-size: 15px;
+	transition: color 200ms ease;
+}
+
+.mk-main-nav a:hover,
+.mk-main-nav a.active{
+	color: var(--mk-accent);
+}
+
+.sidenav-bar{
+	background-color: #111416;
+	width: 320px;
+}
+
+.sidenav-bar .navigation li a{
+	color: #f0f0f0;
+}
+
+.sidenav-bar .contact-info-box .info-box p,
+.sidenav-bar .contact-info-box .info-box p a{
+	color: #c9c9c9;
+}
+
+.sidenav-bar .contact-info-box .info-box .icon-box span{
+	color: var(--mk-accent);
+}
+
+.main-header .outer-box{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.main-header .btn-box{
+	padding: 0;
+	margin-left: 0;
+}
+
+.nav-toggler{
+	display: none;
 }
 
 .mk-cta{
@@ -9806,10 +9869,18 @@ img{
 
 .mk-section{
 	padding: 90px 0;
+	background-color: #f6f4ef;
+}
+
+.mk-section,
+.mk-section p,
+.mk-section li,
+.mk-section .text{
+	color: #3d3d3d;
 }
 
 .mk-section.alt{
-	background-color: #f0eee8;
+	background-color: #ffffff;
 }
 
 .mk-product-card{
@@ -9836,6 +9907,37 @@ img{
 	font-size: 24px;
 	color: var(--mk-dark);
 	margin-bottom: 12px;
+}
+
+.mk-team-card{
+	background: #ffffff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 18px 40px rgba(20,20,20,.08);
+	height: 100%;
+	text-align: left;
+}
+
+.mk-team-card .image img{
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+}
+
+.mk-team-card .content{
+	padding: 22px 24px 26px;
+}
+
+.mk-team-card h3{
+	font-size: 22px;
+	color: var(--mk-dark);
+	margin-bottom: 6px;
+}
+
+.mk-team-card .role{
+	font-weight: 600;
+	color: var(--mk-accent);
+	margin-bottom: 10px;
 }
 
 .mk-tag{
@@ -9918,6 +10020,12 @@ img{
 }
 
 @media (max-width: 991px){
+	.mk-main-nav{
+		display: none;
+	}
+	.nav-toggler{
+		display: inline-block;
+	}
 	.mk-hero-content h2{
 		font-size: 56px;
 	}
