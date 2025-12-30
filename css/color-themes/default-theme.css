@@ -77,7 +77,7 @@
 .btn-style-four:hover,
 .btn-style-two:hover,
 a{
-	color: #ffbc00;
+	color: #1f5f5a;
 }
 
 /*=== Background Color ===*/
@@ -112,13 +112,13 @@ a{
 .btn-style-four,
 .btn-style-two,
 .btn-style-one:before{
-	background-color: #ffbc00;
+	background-color: #1f5f5a;
 }
 
 ::-webkit-selection,
 ::-moz-selection,
 ::selection{
-	background-color: #ffbc00;
+	background-color: #1f5f5a;
 }
 
 /*Border Color*/
@@ -197,13 +197,13 @@ a{
 .banner-section .swiper-slide .content .inner:before,
 .search-popup .close-search,
 .btn-style-four{
-	border-color: #ffbc00;
+	border-color: #1f5f5a;
 }
 
 .pricing-table .inner-box{
-	border-bottom-color: #ffbc00;
+	border-bottom-color: #1f5f5a;
 }
 
 .pricing-table .inner-box{
-	border-top-color: #ffbc00;
+	border-top-color: #1f5f5a;
 }
